@@ -1,17 +1,20 @@
 import React from "react"
 import {Card} from "./Card"
 
-export const CardList = (contacts) => {
-    console.log("contacts as prop:",contacts);
-    const cardArray = contacts.contacts.map((item, index) => {
-            console.log(item.img)
+export const CardList = (props) => {
+    console.log("contacts as prop:",props);
+    const cardArray = props.contacts.map((item, index) => {
+            console.log("CardList:",props.handleEdit)
         return (
                 <Card 
+                    id = {index}
                     key = {index}
-                    img = {item.img}
                     name = {item.name}
                     email = {item.email}
-                    phone = {item.phoneNum}
+                    number = {item.number}
+                    handleEdit = {props.handleEdit}
+                    handleDelete={props.deleteClicked}
+                    routeProperty = {props.routeProperty}
             />
         )
     })

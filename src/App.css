@@ -2,21 +2,62 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.App-header {
+  background-color:  #f8f8f8;
+  height: 100;
+  width: 100%;
+  padding: 20px 50px;
+  color: #777;
+  font-size: 40px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-intro {
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+
+.addContacts {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+
+/* Validator css */
+input {
+  margin: 0px;
+  background-color: red;
+}
+
+input:valid {
+  background-color: powderblue;
+}
+
+.submitButton {
+  margin-left: 120px;
+  margin-right: 20px;
+  width: 100px;
+  color: darkblue;
+}
+
+.submitButton:hover{
+  color: white;
+  background-color: purple;
+}
+
+.cancelButton {
+  width: 100px;
+  color: darkblue;
+}
+
+.cancelButton:hover {
+  color: white;
+  background-color: purple;
 }
